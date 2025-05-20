@@ -22,13 +22,29 @@ class Stack
 private:
     Node *top;
 
+public:
+    Stack()
+    {
 
+        top = NULL;
+    }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
+    void pop()
+    {
+        if (isEmpty())
+        {
+            cout << "Stack is Empty" << endl;
 
-
-
-
-
+        }
     }
 }
