@@ -71,18 +71,18 @@ public:
         
 
     }   
-     
-     
-     
-     
-      
+     bool isEmpty()
+    {
+        return top == NULL;
+    }   
+        
 };
 
-int main()
-{
-    Stack stact;
-    int choice = 0;
-    int value;
+
+
+
+
+
 
     while (choice != 5)
     {
@@ -92,5 +92,21 @@ int main()
         cout << "3. Peek\n";
         cout << "4. Exit\n";
         cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice)
+        {
+            case 1:
+                cout << "Enter value to push: ";
+                cin >> value;
+                stact.push(value);
+                break;
+            case 2:
+            if (stact.isEmpty())
+            {
+                stact.pop();
+            }
+
+        }
     }
 }
