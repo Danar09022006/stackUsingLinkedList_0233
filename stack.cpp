@@ -51,13 +51,14 @@ public:
 
     }
 
-    void peak()
+    void peek()
     {
         if (top == NULL)
         {
-            cout << "List is Empty." << endl;
+        cout << "List is Empty." << endl;
         }
         else
+        
         {
             Node *current = top;
             while (current != NULL)
@@ -67,12 +68,29 @@ public:
             }
             cout << endl;
         }
-   
-   
-   
-    }   
         
-    
-    
-    
+
+    }   
+     
+     
+     
+     
+      
+};
+
+int main()
+{
+    Stack stact;
+    int choice = 0;
+    int value;
+
+    while (choice != 5)
+    {
+
+        cout << "1. Push\n";
+        cout << "2. Pop\n";
+        cout << "3. Peek\n";
+        cout << "4. Exit\n";
+        cout << "Enter your choice: ";
+    }
 }
